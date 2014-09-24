@@ -13,7 +13,7 @@ cookieParser = require 'cookie-parser'
 
 app = express()
 
-app.set 'port', process.env.PORT || 3000
+app.set 'port', process.env.PORT || 4000
 
 # models/events
 app.set 'models', require.all path.resolve 'models'
