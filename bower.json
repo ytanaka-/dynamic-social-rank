@@ -1,0 +1,41 @@
+{
+  "name": "dynamic-social-rank",
+  "version": "0.0.0",
+  "authors": [
+    "ytanaka <y.matsuura000@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "underscore": "~1.6.0",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.2.0",
+    "marionette": "~2.2.1"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+        "js": "dist/js/bootstrap.min.js",
+        "css": "dist/css/bootstrap.min.css"
+    },
+    "backbone": {
+      "js": "backbone.js"
+    },
+    "underscore": {
+      "js": "underscore.js"
+    },
+    "jquery": {
+      "js": "dist/jquery.min.js"
+    },
+    "marionette": {
+      "js": "lib/backbone.marionette.js"
+    }
+  }
+}

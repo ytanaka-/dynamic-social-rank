@@ -1,0 +1,18 @@
+.streamItem {
+  margin: 7px 0px;
+}
+
+.streamItem img {
+  width: 120px;
+  height: 90px;
+}
+
+.streamItem .description {
+  text-overflow: ellipsis;
+  font-size: 11px;
+  color: #808080;
+}
+
+.streamItem .title p{
+  font-size: 14px;
+}

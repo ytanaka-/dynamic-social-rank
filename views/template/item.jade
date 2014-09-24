@@ -1,0 +1,11 @@
+div.col-md-12.streamItem
+  div.col-md-2
+    img(src="{{item.thumbnail}}")
+  div.col-md-10
+    a.title(href="{{item.url}}")
+      p="{{item.title}}" + " (" + "{{item.site_url}}" + ")"
+    p.description= "{{item.description}}"
+    div.list_footer(attr="{{item._id}}")
+      p
+        a(role="button").btn-sm.btn-default.up-button 評価UP!!
+        a(role="button").btn-sm.btn-default.down-button 評価Down

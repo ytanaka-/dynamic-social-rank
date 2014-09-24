@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  #Items
+
+  form.row
+    div.col-md-12
+      div.input-group
+        input#m.form-control
+        span.input-group-btn
+          button.btn.btn-default 送信
+
+  script#streamItemTemplate(type="text/template")
+    include template/item

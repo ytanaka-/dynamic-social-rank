@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title = 'dynamic-social-rank'
+
+    //- JavaScript
+    script(src='/socket.io/socket.io.js')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    //script(src='/lib/js/jquery/jquery.min.js')
+    script(src='/lib/js/underscore/underscore.js')
+    script(src='/lib/js/backbone/backbone.js')
+    script(src='/lib/js/bootstrap/bootstrap.min.js')
+    script(src='/lib/js/marionette/backbone.marionette.js')
+
+    //- User Script
+    script(src="/js/http.js")
+    script(src="/js/io.js")
+    script(src="/js/model.js")
+    script(src="/js/view.js")
+    script(src="/js/main.js")
+
+    link(rel='stylesheet', href='/lib/css/bootstrap/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/stream.css')
+
+  body
+    .container(style="width: 1000px;")
+      block content
