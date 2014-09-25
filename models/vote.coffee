@@ -15,7 +15,7 @@ voteSchema.path('type').validate (value) ->
   return false
 , 'Invalid value'
 
-voteSchema.statics = {
+voteSchema.statics =
   findVoteByStream: (stream,cb)->
     @find
       stream: stream._id
@@ -23,6 +23,5 @@ voteSchema.statics = {
     .populate 'item'
     .exec (err,votes)->
       cb err, votes
-}
 
 exports.Vote = mongoose.model 'Vote',voteSchema
