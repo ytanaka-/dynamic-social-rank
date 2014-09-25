@@ -107,5 +107,5 @@ module.exports.StreamEvent = (app) ->
       ItemEvent.addItem post_item_url,stream,(err)->
         if err
           return debug err
-        return console.log "登録完了"
-
+        socket.emit "notifyNewItems",null
+        return socket.broadcast.to(room).emit "notifyNewItems",null
