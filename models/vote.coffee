@@ -20,7 +20,7 @@ voteSchema.statics =
     @find
       stream: stream._id
     #.sort({'date':1}) # 昇順でソート 元々昇順ぽいのでコメントアウト中
-    .populate 'item'
+    .populate('item')
     .exec (err,votes)->
       cb err, votes
 
